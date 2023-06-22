@@ -30,15 +30,39 @@
         @apply flex flex-col items-center text-center w-9/12 mx-auto md:w-1/3;
     }
 
-    .main-item { 
-        @apply my-2;
+    .main-avatar-sm { 
+        @apply my-2 md:hidden;
+    }
+
+    .main-avatar-md { 
+        @apply my-2 hidden md:block;
+    }
+
+    .quote-container { 
+        @apply my-2 hidden md:block;
+    }
+
+    .quote {
+        @apply my-2 text-sm md:text-lg;
+    }
+
+    .quote-credit {
+        @apply my-2
+    }
+
+    .quote-author {
+        @apply text-sm font-extrabold;
+    }
+
+    .quote-job {
+       @apply  text-slate-400 text-xs;
     }
 
     .footer-container {
         @apply p-4 md:p-8;
     }
 
-    .footer-item{
+    .footer-credit{
         @apply text-xs text-slate-400;
     }
 }
